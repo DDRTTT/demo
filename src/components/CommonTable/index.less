@@ -1,0 +1,60 @@
+:global{
+  .commonTable {
+    color: blue;
+    .react-resizable {
+      position: relative;
+      background-clip: padding-box;
+    }
+
+    .react-resizable-handle {
+      position: absolute;
+      width: 10px;
+      height: 100%;
+      bottom: 0;
+      right: -5px;
+      cursor: col-resize;
+      z-index: 1;
+    }
+
+    .ant-table-scroll{
+      overflow-x: auto !important;
+      min-height: 30px;
+      &::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+      }
+      &::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background: #cccccc;
+      }
+      /*轨道*/
+      &::-webkit-scrollbar-track {
+        border-radius: 5px;
+        background: #eeeeee;
+      }
+    }
+
+    .ant-table-body{
+      //overflow-x: hidden !important;
+      &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+      }
+      &::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background: #cccccc;
+      }
+      /*轨道*/
+      &::-webkit-scrollbar-track {
+        border-radius: 5px;
+        background: #eeeeee;
+      }
+
+    }
+    .ant-table-thead{
+      &::-webkit-scrollbar {
+        width: 0;
+      }
+    }
+  }
+}

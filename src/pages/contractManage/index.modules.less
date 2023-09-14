@@ -1,0 +1,182 @@
+.test {
+  border: 1px solid #dddddd;
+  width: 100px;
+  height: 100px;
+}
+.box {
+  padding: 20px;
+}
+.searchBox {
+  position: relative;
+  .reviewBox {
+    height: 34px;
+    width: 150px;
+    line-height: 34px;
+    text-align: center;
+    margin-bottom: 20px;
+    display: inline-block;
+    .reviewL {
+      border: 1px solid #ddd;
+      display: inline-block;
+      border-right: none;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+      width: 50%;
+    }
+    .reviewR {
+      border: 1px solid #ddd;
+      display: inline-block;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+      width: 50%;
+    }
+    .active {
+      background-color: #2e76ee;
+      color: #fff;
+      border-color: #2e76ee;
+    }
+  }
+  .search {
+    width: 300px;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+// .titleStyle {
+//   font-size: 16px;
+//   color: rgba(0, 0, 0, 0.85);
+//   font-weight: 500;
+// }
+.mr8 {
+  margin-right: 8px;
+}
+
+.top {
+  height: 60px;
+  text-align: right;
+}
+
+.outBox {
+  position: relative;
+}
+
+.editArea {
+  width: 78%;
+  // width: 100%;
+  float: left;
+  min-height: 800px;
+  margin-left: -20px;
+}
+
+.operatorArea {
+  width: calc(22% + 40px);
+  margin: -20px -40px -20px 0;
+  float: left;
+  padding-left: 10px;
+}
+.setBtn {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.required {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 100;
+}
+.noRequired {
+  display: inline-block;
+  text-indent: 11px;
+  font-size: 14px;
+  font-weight: 100;
+}
+.required:before {
+  display: inline-block;
+  margin-right: 4px;
+  content: '*';
+  font-family: SimSun;
+  line-height: 1;
+  font-size: 14px;
+  color: #f5222d;
+}
+.stakeholdersBody {
+  overflow-y: auto;
+  height: 580px;
+  padding: 20px;
+  .stakeholdersL {
+    height: 500px;
+    width: 45%;
+    float: left;
+    padding-right: 20px;
+  }
+  .stakeholdersR {
+    height: 500px;
+    width: 55%;
+    float: left;
+    padding-left: 20px;
+  }
+}
+.labelBox {
+  display: inline-block;
+  height: 28px;
+  padding: 0 5px;
+  line-height: 28px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 0 5px 5px 0;
+}
+
+.contractTitle {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.menuItem {
+  text-align: center;
+  cursor: pointer;
+  height: 32px;
+  line-height: 32px;
+}
+
+.openQueryBtn {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.headPortrait2 {
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.userNameBox {
+  padding: 0 5px;
+  margin: 0 5px;
+  display: inline-block;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  color: #1890ff;
+  background: rgba(230, 247, 255, 1);
+  border: 1px solid rgba(145, 213, 255, 1);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.signNameBox {
+  min-height: 200px;
+  span {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    background: #e8ecef;
+    border: 1px solid #cad2da;
+    border-radius: 4px;
+    font-weight: bold;
+    margin: 10px;
+  }
+}

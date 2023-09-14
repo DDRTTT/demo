@@ -1,0 +1,33 @@
+diff --git a/node_modules/@formily/antd/esm/array-base/index.js b/node_modules/@formily/antd/esm/array-base/index.js
+index f89fb77..d3ccbda 100644
+--- a/node_modules/@formily/antd/esm/array-base/index.js
++++ b/node_modules/@formily/antd/esm/array-base/index.js
+@@ -92,9 +92,9 @@ ArrayBase.Index = function (props) {
+     var index = useIndex();
+     var prefixCls = usePrefixCls('formily-array-base');
+     return (React.createElement("span", __assign({}, props, { className: "".concat(prefixCls, "-index") }),
+-        "#",
++        "",
+         index + 1,
+-        "."));
++        ""));
+ };
+ ArrayBase.Addition = function (props) {
+     var _a, _b;
+diff --git a/node_modules/@formily/antd/esm/preview-text/index.js b/node_modules/@formily/antd/esm/preview-text/index.js
+index 43c8c93..f1a6631 100644
+--- a/node_modules/@formily/antd/esm/preview-text/index.js
++++ b/node_modules/@formily/antd/esm/preview-text/index.js
+@@ -4,10 +4,10 @@ import { observer, useField } from '@formily/react';
+ import { Tag, Space } from 'antd';
+ import cls from 'classnames';
+ import { formatMomentValue, usePrefixCls } from '../__builtins__';
+-var PlaceholderContext = createContext('N/A');
++var PlaceholderContext = createContext('-');
+ var Placeholder = PlaceholderContext.Provider;
+ var usePlaceholder = function (value) {
+-    var placeholder = useContext(PlaceholderContext) || 'N/A';
++    var placeholder = useContext(PlaceholderContext) || '-';
+     return isValid(value) && value !== '' ? value : placeholder;
+ };
+ var Input = function (props) {

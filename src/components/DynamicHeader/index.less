@@ -1,0 +1,33 @@
+.icon_set {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.icon_reset {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.dynameHeaderNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.popContent {
+  :global {
+    .ant-checkbox-wrapper {
+      display: block;
+    }
+    .ant-checkbox-wrapper + .ant-checkbox-wrapper {
+      margin-left: 0;
+    }
+    .bottomWrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+  }
+}

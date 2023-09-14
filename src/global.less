@@ -1,0 +1,136 @@
+@import '~antd/es/style/themes/default.less';
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+    &-thead > tr,
+    &-tbody > tr {
+      > th,
+      > td {
+        white-space: pre;
+        > span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+// 兼容IE11
+@media screen and(-ms-high-contrast: active), (-ms-high-contrast: none) {
+  body .ant-design-pro > .ant-layout {
+    min-height: 100vh;
+  }
+}
+
+.ant-input-affix-wrapper::before {
+  width: 0;
+  visibility: hidden;
+  content: '\A0';
+  font-size: 0;
+}
+body {
+  .ant-input-affix-wrapper {
+    vertical-align: middle;
+  }
+  .ant-tree-checkbox{
+    top: 5px;
+  }
+  .ant-table-column-sorter-full{
+    height: 19px;
+  }
+  .ant-breadcrumb-separator {
+    margin: 0 4px;
+  }
+  .ant-tree-checkbox {
+    top: 0.2em;
+  }
+  .ant-upload-list-item-card-actions .anticon {
+    padding-right: 0px;
+  }
+  .ant-upload-list-text .ant-upload-list-item-name, .ant-upload-list-picture .ant-upload-list-item-name {
+    padding: 0 16px;
+  }
+  .ant-upload-list-text .ant-upload-list-item-card-actions, .ant-upload-list-picture .ant-upload-list-item-card-actions {
+    position: absolute;
+  }
+  .ant-select-tree-checkbox {
+    top: 0.35em;
+  }
+  .ant-select-selection-overflow {
+    .ant-select-selection-overflow-item{
+      .selectTooltip {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        display: block;
+      }
+    }
+  }
+  .antd-pro-components-form-list-box-index-margin .ant-card-head{
+    border-bottom:1px solid #f0f0f0
+  }
+  #collDiv{
+    display: none;
+  }
+  .ant-input-affix-wrapper {
+    float: none;
+    position: relative;
+    display: inline-flex;
+    width: 100%;
+    min-width: 0;
+    color: #000000d9;
+    font-size: 14px;
+    height: 32px;
+    line-height: 1.5715;
+    background-color: #fff;
+    background-image: none;
+    border-radius: 2px;
+    transition: all 0.3s;
+    padding: 0 11px ;
+  }
+  .ant-input {
+    line-height:1.5715;
+    height: auto;
+  }
+  .ant-drawer-content-wrapper {
+    transition: none;
+  }
+
+}
+
+.ant-modal-root{
+  .ant-table-container{
+    min-height: calc(20vh);
+  }
+}
+.ant-select-selection-overflow-item {
+  max-width: 50%;
+}

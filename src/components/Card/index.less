@@ -1,0 +1,36 @@
+@import '~antd/es/style/themes/default.less';
+
+.customizeCard {
+  :global {
+    // 移除card头部下边框线
+    .ant-card-head {
+      padding: 0 16px;
+      border-bottom: none;
+
+      .ant-card-head-wrapper {
+        .ant-card-head-title {
+          padding: 13px 0 !important;
+        }
+      }
+    }
+
+    // 移除card头部下边框线
+    .ant-card-body {
+      padding: 16px 16px 16px 16px !important;
+    }
+    .ant-card-extra {
+      padding: 8px 0 !important;
+      button{
+        margin-left: 8px !important;
+      }
+    }
+    .moreTabsListCard {
+      .ant-card-extra {
+        padding: 8px 0 0 !important;
+        & > div {
+          margin-bottom: 0 !important;
+        }
+      }
+    }
+  }
+}

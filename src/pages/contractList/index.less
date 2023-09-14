@@ -1,0 +1,178 @@
+.test {
+  border: 1px solid #dddddd;
+  width: 100px;
+  height: 100px;
+}
+.box {
+  padding: 20px;
+}
+.searchBox {
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  .reviewBox {
+    height: 34px;
+    width: 150px;
+    line-height: 34px;
+    text-align: center;
+    // margin-bottom: 20px;
+    display: inline-block;
+    .reviewL {
+      border: 1px solid #ddd;
+      display: inline-block;
+      border-right: none;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+      width: 50%;
+    }
+    .reviewR {
+      border: 1px solid #ddd;
+      display: inline-block;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+      width: 50%;
+    }
+    .active {
+      background-color: #2e76ee;
+      color: #fff;
+      border-color: #2e76ee;
+    }
+  }
+  .search {
+    width: 300px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+}
+// .titleStyle {
+//   font-size: 16px;
+//   color: rgba(0, 0, 0, 0.85);
+//   font-weight: 500;
+// }
+.mr8 {
+  margin-right: 8px;
+}
+
+.top {
+  height: 60px;
+  text-align: right;
+}
+
+.outBox {
+  position: relative;
+}
+
+.editArea {
+  // width: 78%;
+  width: 100%;
+  float: left;
+  min-height: 800px;
+  margin-left: -20px;
+}
+
+.operatorArea {
+  width: calc(22% + 40px);
+  margin: -20px -40px -20px 0;
+  float: left;
+  padding-left: 10px;
+}
+.setBtn {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.required {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 100;
+}
+.noRequired {
+  display: inline-block;
+  text-indent: 11px;
+  font-size: 14px;
+  font-weight: 100;
+}
+.required:before {
+  display: inline-block;
+  margin-right: 4px;
+  content: '*';
+  line-height: 1;
+  font-size: 14px;
+  color: #f5222d;
+}
+.stakeholdersBody {
+  overflow-y: auto;
+  height: 580px;
+  padding: 20px;
+  .stakeholdersL {
+    height: 500px;
+    width: 45%;
+    float: left;
+    padding-right: 20px;
+  }
+  .stakeholdersR {
+    height: 500px;
+    width: 55%;
+    float: left;
+    padding-left: 20px;
+  }
+}
+.labelBox {
+  display: inline-block;
+  height: 28px;
+  padding: 0 5px;
+  line-height: 28px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 0 5px 5px 0;
+}
+
+.contractTitle {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.menuItem {
+  text-align: center;
+  cursor: pointer;
+  height: 32px;
+  line-height: 32px;
+}
+
+.tableListForm {
+  padding: 20px;
+  background-color: #fff;
+  :global {
+    .ant-form-item {
+      margin-bottom: 8px;
+      margin-right: 0;
+      display: flex;
+
+      label {
+        width: 110px;
+        display: inline-block;
+      }
+
+      > .ant-form-item-label {
+        width: auto;
+        padding-right: 8px;
+      }
+    }
+
+    .ant-form-item-control-wrapper {
+      flex: 1;
+    }
+  }
+
+  .submitButtons {
+    white-space: nowrap;
+    margin-bottom: 24px;
+  }
+}
+
+.tabsBox {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+}

@@ -1,0 +1,54 @@
+@import '~antd/es/style/themes/default.less';
+
+/* @import  ../operation-unit.less ; */
+
+.pageContainer {
+  margin-bottom: 16px;
+  padding: 0px 20px;
+  background: #fff;
+
+  .contentBreadcrumb {
+    .breadcrumb {
+      display: inline-block;
+    }
+  }
+
+  .contentFooter {
+    height: 48px;
+
+    :global {
+      .ant-tabs-bar {
+        border-bottom: 1px solid #fff;
+      }
+
+      .ant-tabs {
+        padding-top: 4px;
+      }
+    }
+  }
+
+  .transButton {
+    // .operation-unit();
+
+    color: #575d6c;
+    cursor: pointer;
+
+    .backText {
+      margin-left: 5px;
+    }
+
+    &:hover {
+      color: @primary-color;
+    }
+  }
+
+  .contentSearch {
+    width: auto;
+    float: right;
+    margin-top: -39px;
+  }
+  .contentFilter {
+    clear: both;
+    display: block;
+  }
+}

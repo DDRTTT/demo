@@ -1,0 +1,41 @@
+@font-size: 12px;
+@color: #fff;
+.content {
+  margin: 10px;
+  box-shadow: 0 2px 12px 0 #0000001a;
+
+  .tag {
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+
+  .tagLeftColor {
+    .tag;
+    font-size: @font-size;
+    color: @color;
+    background: #2450a5;
+  }
+
+  .tagRightColor {
+    .tag;
+    font-size: @font-size;
+    color: @color;
+    background: #f66f6a;
+  }
+
+  .leftColor {
+    .tag;
+    background: #cbf2e6;
+  }
+
+  .rightColor {
+    .tag;
+    background: #fcd4d3;
+  }
+
+  .time {
+    font-weight: normal;
+    padding-right: 14px;
+    font-size: 18px;
+  }
+}

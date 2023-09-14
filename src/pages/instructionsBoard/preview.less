@@ -1,0 +1,337 @@
+.box {
+  padding: 20px;
+  background-color: #fff;
+}
+.searchBox {
+  position: relative;
+  .reviewBox {
+    height: 34px;
+    width: 150px;
+    line-height: 34px;
+    text-align: center;
+    margin-bottom: 20px;
+    display: inline-block;
+
+    .reviewL {
+      border: 1px solid #ddd;
+      display: inline-block;
+      border-right: none;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+      width: 50%;
+    }
+    .reviewR {
+      border: 1px solid #ddd;
+      display: inline-block;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+      width: 50%;
+    }
+    .active {
+      background-color: #2e76ee;
+      color: #fff;
+      border-color: #2e76ee;
+    }
+  }
+  .search {
+    width: 600px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: right;
+  }
+}
+
+.tabArea {
+  border-bottom: 1px dashed #ddd;
+  padding: 20px;
+  .tabBtn {
+    cursor: pointer;
+    display: inline-block;
+    height: 25px;
+    // padding: 0 10px;
+    margin-left: 15px;
+    line-height: 25px;
+    text-align: center;
+  }
+  .tabTitle {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .tabContent {
+    padding: 20px;
+  }
+  .active {
+    border: 1px solid #2e76ee;
+    border-radius: 4px;
+  }
+}
+
+.oftenCard {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  border: solid 1px #e6e6e6;
+
+  .imgBox {
+    float: left;
+    width: 89px;
+    height: 126px;
+  }
+
+  .doBox {
+    margin-left: 120px;
+
+    p:nth-child(1) {
+      color: #333;
+      margin-bottom: 10px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    p:nth-child(2) {
+      color: #999;
+    }
+
+    p:nth-child(3) {
+      margin-top: 50px;
+      margin-bottom: 0;
+      a {
+        color: #666;
+        font-size: 14px;
+        display: inline-block;
+      }
+
+      a:hover {
+        color: #3384d5;
+      }
+
+      div {
+        width: 1px;
+        height: 11px;
+        margin: 0 10px;
+        display: inline-block;
+        background-color: #666;
+      }
+    }
+  }
+}
+
+.titleBox {
+  color: #666;
+  font-size: 14px;
+  font-weight: bolder;
+  height: 40px;
+  line-height: 40px;
+}
+
+.tableListForm {
+  :global {
+    .ant-form-item {
+      margin-bottom: 8px;
+      margin-right: 0;
+      display: flex;
+
+      label {
+        width: 80px;
+        display: inline-block;
+      }
+
+      > .ant-form-item-label {
+        width: auto;
+        padding-right: 8px;
+      }
+    }
+
+    .ant-form-item-control-wrapper {
+      flex: 1;
+    }
+  }
+
+  .submitButtons {
+    white-space: nowrap;
+    margin-bottom: 24px;
+  }
+}
+
+.tipBtnBox {
+  height: 28px;
+}
+
+.page {
+  margin-top: 30px;
+  padding-right: 50px;
+  text-align: right;
+}
+
+.tipText {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.editArea {
+  width: 77%;
+  float: left;
+  min-height: 800px;
+}
+
+.btnArea {
+  height: 40px;
+  text-align: right;
+}
+
+.operatorArea {
+  width: calc(22% + 40px);
+  margin: -20px -40px -20px 0;
+  float: left;
+}
+.method {
+  color: #f39;
+  padding: 20px;
+
+  div {
+    text-indent: 20px;
+  }
+}
+
+.labelSetBox {
+  padding: 20px;
+
+  p {
+    text-indent: 20px;
+    margin-bottom: 5px;
+  }
+}
+
+.syncBtn {
+  color: #2e76ee;
+  margin: 0 0 10px 20px;
+  cursor: pointer;
+}
+
+.tagsBox1 {
+  height: 475px;
+  overflow-y: auto;
+}
+
+.tagsBox2 {
+  height: 355px;
+  overflow-y: auto;
+}
+.mappingBox {
+  p {
+    margin-left: 40px;
+  }
+}
+.signName {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.docxTags {
+  cursor: pointer;
+  // &:hover {
+  //   color: #2e76ee;
+  // }
+}
+
+.nameStyle {
+  width: 280px;
+  // display: inline-block;
+  text-indent: 25px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.czStyle {
+  font-size: 20px;
+}
+
+.pairRows {
+  box-sizing: border-box;
+}
+
+.pairL,
+.pairR {
+  width: 120px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  user-select: none;
+  cursor: pointer;
+}
+
+.pairM {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.reduce {
+  &:hover {
+    color: #f5222d;
+    cursor: pointer;
+  }
+}
+
+.plusBtn {
+  position: absolute;
+  bottom: 10px;
+  left: 50px;
+}
+
+.headPortrait2 {
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+.headPortrait {
+  width: 22px;
+  height: 22px;
+  border-radius: 100%;
+  margin: 0 10px;
+}
+
+.userNameBox {
+  padding: 0 5px;
+  margin: 0 5px;
+  display: inline-block;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  color: #1890ff;
+  background: rgba(230, 247, 255, 1);
+  border: 1px solid rgba(145, 213, 255, 1);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.openQueryBtn {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.itemBox {
+  height: 580px;
+  overflow-y: auto;
+  margin-top: 5px;
+}
+.groupLabel {
+  height: 30px;
+  position: absolute;
+  top: -15px;
+  left: 20px;
+  padding: 0 8px;
+  background-color: #fff;
+}
